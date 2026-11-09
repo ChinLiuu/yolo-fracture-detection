@@ -179,3 +179,35 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# =====================================
+# YOLO Fracture Detection Project
+# =====================================
+
+# Dataset archives
+dataset/*.zip
+dataset/**/*.zip
+
+# Dataset files (if stored locally)
+dataset/images/
+dataset/labels/
+
+# YOLO training outputs
+runs/
+wandb/
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+
+# Training checkpoints
+last.pt
+best.pt
+
+# Temporary files
+*.tmp
+
+# Sensitive credentials
+.env
+.env.*
